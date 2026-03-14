@@ -63,9 +63,9 @@ nav{position:sticky;top:0;z-index:100;background:#0D0610;display:flex;align-item
 .h1 em{font-style:italic;color:#E8C97A}
 .h-divider{width:48px;height:1px;background:rgba(192,154,82,.4);margin:36px 0}
 .h-sub{font-size:16px;font-weight:300;color:rgba(245,239,232,.55);max-width:480px;line-height:1.75;margin-bottom:48px}
-.btn{display:inline-flex;align-items:center;gap:14px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);text-decoration:none;border:1px solid rgba(192,154,82,.38);padding:17px 36px;transition:border-color .25s,background .25s,box-shadow .25s,transform .25s}
+.btn{display:inline-flex;align-items:center;gap:14px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);text-decoration:none;border:1px solid rgba(192,154,82,.38);padding:17px 36px;transition:border-color .25s,background .25s,box-shadow .25s,transform .25s;box-shadow:0 4px 0 rgba(192,154,82,.2),0 6px 12px rgba(0,0,0,.15)}
 .btn:hover{border-color:var(--gold);background:rgba(192,154,82,.06);box-shadow:0 2px 0 rgba(192,154,82,.2),0 3px 8px rgba(0,0,0,.15);transform:translateY(2px)}
-.btn-dark{background:var(--grad);color:var(--gold);border-color:transparent;box-shadow:0 4px 0 rgba(0,0,0,.4),0 6px 12px rgba(0,0,0,.25)}
+.btn-dark{display:block;width:100%;text-align:center;background:var(--grad);color:var(--gold);border-color:transparent;box-shadow:0 4px 0 rgba(0,0,0,.4),0 6px 12px rgba(0,0,0,.25)}
 .btn-dark:hover{background:var(--grad-mid);border-color:transparent;box-shadow:0 2px 0 rgba(0,0,0,.4),0 3px 8px rgba(0,0,0,.25);transform:translateY(2px)}
 .btn-arrow{transition:transform .2s}
 .btn:hover .btn-arrow{transform:translateX(5px)}
@@ -320,12 +320,14 @@ footer{background:#07030D;padding:28px 52px;display:flex;align-items:center;just
         <p class="prob-body">El algoritmo limita el alcance orgánico al 1–3.5% (aproximado). El contenido desaparece en horas sin construir ningún archivo público duradero. Produces para un algoritmo diseñado para ignorarte y cobrarte cada vez que quieres ser visto, mientras alguien con menor trayectoria pero mejor <strong>estrategia de medios</strong> ocupa el espacio que debería ser tuyo.</p>
       </article>
       <article class="prob-item">
-        <span class="prob-n" aria-hidden="true">III</span>
-        <h3 class="prob-head">El Código que autoriza a los medios y deja a un lado a las redes sociales</h3>
-        <p class="prob-body">¿Te has preguntado que viola el Código de Deontología Médica? Pues si, las redes sociales. Un médico que publica contenido de captación de pacientes en Instagram o TikTok, o un antes y un después, o incluso grabar y publicar un parto (sin autorización del Colegio de Médicos) está en zona de franca vulnerabilidad deontológica bajo el Artículo 20, numeral 1.</p>
-        <p class="prob-body" style="margin-top:14px">La participación estratégica, responsable y éticamente gestionada no sólo está permitida, sino que es perfectamente legítima. De hecho, el Artículo 29 la regula específicamente, y el Artículo 1 la convierte en un deber: "el fomento y la preservación de la salud como componentes del bienestar social constituyen en todas las circunstancias el deber primordial del médico."</p>
-        <p style="margin-top:16px;font-size:11px;color:var(--ink-50);font-style:italic;line-height:1.6">Referencias: Código de Deontología Médica de Venezuela — Art. 1, Art. 20 num. 1 y 3, Art. 29. LXXVI Reunión Extraordinaria, Caracas, 20 de marzo de 1985.</p>
-      </article>
+  <span class="prob-n" aria-hidden="true">III</span>
+  <h3 class="prob-head">El Código que autoriza a los medios y deja a un lado a las redes sociales</h3>
+  <div class="prob-body">
+    <p>¿Te has preguntado que viola el Código de Deontología Médica? Pues si, las redes sociales. Un médico que publica contenido de captación de pacientes en Instagram o TikTok, o un antes y un después, o incluso grabar y publicar un parto (sin autorización del Colegio de Médicos) está en zona de franca vulnerabilidad deontológica bajo el Artículo 20, numeral 1.</p>
+    <p style="margin-top:14px">La participación estratégica, responsable y éticamente gestionada no sólo está permitida, sino que es perfectamente legítima. De hecho, el Artículo 29 la regula específicamente, y el Artículo 1 la convierte en un deber: "el fomento y la preservación de la salud como componentes del bienestar social constituyen en todas las circunstancias el deber primordial del médico."</p>
+    <p style="margin-top:16px;font-size:11px;color:var(--ink-50);font-style:italic;line-height:1.6">Referencias: Código de Deontología Médica de Venezuela — Art. 1, Art. 20 num. 1 y 3, Art. 29. LXXVI Reunión Extraordinaria, Caracas, 20 de marzo de 1985.</p>
+  </div>
+</article>
     </div>
     <blockquote class="pq">
       <p>"La autoridad profesional se construye. Si decides no ocupar tu espacio, la inercia lo hará por alguien con menos méritos que los tuyos."</p>
